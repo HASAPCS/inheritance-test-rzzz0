@@ -15,13 +15,15 @@ public class Smartphone extends ElectronicDevice {
     public int getBatteryLevel(){
         return this.batteryLevel;
     }
-
-    public checkBattery(){
+ 
+    
+    public String checkBattery(){
 
         if(this.batteryLevel <= 20){
             return "Warning: Battery Low!";
-        if (this.batteryLevel >= 21);
-            return"Battery level is okay: " + batteryLevel + "%";
+        }
+        else {
+            return "Battery level is okay: " + batteryLevel + "%";
         }
     }
     
@@ -36,3 +38,4 @@ public class Smartphone extends ElectronicDevice {
     // OPTIONALLY implement the required methods to pass the BonusTest.
 
 }
+
