@@ -20,7 +20,7 @@ public class Smartphone extends ElectronicDevice {
     public String checkBattery(){
 
         if(this.batteryLevel <= 20){
-            return "Warning: Battery Low!";
+            return "Warning: Battery low!";
         }
         else {
             return "Battery level is okay: " + batteryLevel + "%";
